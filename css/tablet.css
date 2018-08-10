@@ -1,0 +1,39 @@
+/*********************************************************
+RELATIVE SIZES
+**********************************************************/
+header{ font-size: .75em }
+nav a{
+	padding: 5px 5px 5px 5px;
+	-mozkit-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+		
+}
+
+.nav { margin: 0 .5% 0 .5% }
+.nav.one{
+	width: 20px;
+	background: url(../home-sprite.png) no-repeat 0 3px;
+}
+/*********************************************************
+END RELATIVE SIZES
+**********************************************************/
+/* Layout Medium Screens */
+#index-container{
+	width:100%;
+	min-height: 600px;
+	background: #d5d5d5 url(../images/bg-medium/davao-city-tours-philippine-eagle.jpg) no-repeat center 0;
+}
+.index-list-banners{ top: 380px }
+.index-banners{ min-height: 100px; }
+.index-list-bg { height: 97px; }
+.index-list-bg.one{ background: url(../images/banner-medium/davaobannersprite.jpg) no-repeat center 0 }
+.index-list-bg.two{ background: url(../images/banner-medium/davaobannersprite.jpg) no-repeat center -98px }
+.index-list-bg.three{ background: url(../images/banner-medium/davaobannersprite.jpg) no-repeat center -197px }
+.index-list-bg.four{ background: url(../images/banner-medium/davaobannersprite.jpg) no-repeat center -295px }
+
+.index-banners section h1 {font-size: .78em }
+.index-banners section h2 {font-size: .78em }
+.index-banners section a {font-size: .78em }
+
+

@@ -1,0 +1,590 @@
+/* @override http://localhost/etours/css/desktop.css */
+
+@font-face{
+	font-family: open sans;
+	src: url(fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+
+@font-face{
+	font-family: Averia Libre;
+	src: url(fonts/Averia_Libre/AveriaLibre-Regular.ttf);
+	color: #0096ff;
+}
+/* GENERIC STYLE*********************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************/
+.blue{ background-color: rgba(0,83,146,1); }
+.white{ background-color: rgba(254,255,255,0.95); }
+.inline-block{ display: inline-block; }
+.no-list-style{ list-style-type: none; }
+.no-text-decoration{ text-decoration: none }
+.left-align{text-align:left}
+.right-align{text-align:right}
+.center{ margin: 0 auto; }
+.no-pad{ padding:0px; }
+.no-margin{ margin:0px; }
+.banner-width{ width: 23.75%; }
+.float-left{ float: left; }
+.left-aside{ width:20%;}
+.right-aside{ width:20%; }
+.error{color:red; }
+.spacer{ clear: both; }
+.no-left-pad{ padding-left:0px;}
+.capitalize{ text-transform: capitalize; }
+.no-border{	border: none}
+.checkmark{
+	list-style-type: none;
+	padding-left: 10px;	
+}
+
+.center-align{
+	text-align: center;
+}
+	
+.bdr-btm{
+	border-bottom:1px dotted #00a500;
+}
+.nine-em{ 
+	font-size: .9em; 
+	color: #424242;
+}
+.small-grey{
+	color: #a9a9a9;
+	font: .75em "open sans";
+}
+
+.mid-grey{
+	color: #797979;
+	font: .8em "open sans";
+}
+.large-grey{
+	color: #5e5e5e;
+	font: .9em "open sans";
+}
+.checkmark li:before{ 
+	content: "\2713\0020";
+	color: #00a500;
+	padding-right: .3em;	
+	font-weight: bold;
+}
+
+.xmark li:before{	
+	content: "\2717";
+	padding-right: .3em;
+	color: #ff2600;
+	font-weight: bold;
+}
+
+.doubleArrow li:before{ 
+	content: "\00BB";
+	padding-right: .3em;	
+}
+
+.rounded-corners{
+	-mozkit-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+}
+
+h2{
+	color: #925000;
+	font-size: 1.2em;
+}
+
+/* NAV AND HEADER *****************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************/
+
+body{
+	font: 1em/1.4em "open sans", "Lucida Grande", sans-serif;
+	background-color:#F5F5F5;
+}
+
+header{
+	height: 95px; 
+	font-size: .9em
+}
+
+.logo {	
+	position: relative;
+	top: 10px;
+	left: 10px;
+	margin:0 0 15px 0;
+	width:100%;
+	height: 75px;
+	background: url(/images/etours-davao-logo.svg) no-repeat 1px;
+}
+
+/* NAVIGATION ********************************************************************
+**********************************************************************************
+**********************************************************************************/
+.menu-nav{
+	display: inline-block;
+	list-style-type: none;
+	margin:0px 0px 0px 0px;
+}
+
+nav{
+	background-color: #FF9900;
+	width: 99%;
+	position:relative;
+	margin:0 auto;
+}
+
+nav a {
+	font: 1em/1.4em "Averia Libre", "Lucida Grande", sans-serif;
+	display: block;
+	height:25px;
+	padding: 5px 15px 5px 15px;
+	color: #feffff;
+}
+
+nav a:hover { 
+	background-color: #0096ff; 
+	color: #fff;
+}
+
+/* BODY ***************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************/
+.title{
+	border-top: 1px dotted #d5d5d5;
+	border-bottom: 1px dotted #d5d5d5;
+	padding:15px 5px 15px 5px;
+	font-size: 32px;
+	line-height: 32px;
+	text-transform: capitalize;
+	margin: 0;
+	color: #009900;
+}
+
+.header{
+	font-weight: normal;
+	font-style: normal;
+	margin: 0;
+	font-size: .8em;
+	color: #005392;
+}
+
+.left-nav{
+	position: relative;
+	margin-left: 5px;
+	width:93%;
+}
+.on-this-page{
+	margin: 0;
+	border-bottom: 1px dotted #d5d5d5;
+	font-size: .8em;
+}
+
+#wrapper{
+	position: relative;
+	width: 970px;
+	background-color:white;
+}
+
+.main-content{ 
+	width:58%; 
+	padding-left:10px;
+	border-right: 1px dotted #d5d5d5;
+	border-left: 1px dotted #d5d5d5;
+	padding: 0 10 0 10;
+}
+
+/* INDEX.PHP **********************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************
+***********************************************************************************/
+
+#search{
+	position:absolute;
+	right: 2%;
+	top: 30px;
+	font-size: .95em;
+}
+
+.index-headers{
+	margin:0px;
+	color: #00a500;
+	font-size: 14px;
+	border-top: 1px dotted #c0c0c0;
+	border-bottom: 1px dotted #c0c0c0;	
+}
+
+.index-package {
+	padding:10px;
+	position: relative;
+	min-height:85px;
+
+}
+
+.index-package:hover {
+	background-color: rgba(255,212,120,0.2);
+	cursor:pointer;
+}
+
+.index-thumb {
+	position: absolute;
+	top: 17px;
+	border-radius:2px;
+}
+.index-package h3 {
+	margin: 0px;
+	background-color: none;
+
+}
+.index-name {
+	margin:0;		
+	position: relative;
+	width: 425px;
+	left:120px;
+	color: #007cd5;
+	font-size: 13px;
+	background-color: none;
+}
+.index-desc {
+	margin:0;
+	position: relative;
+	width: 425px;
+	left:120px;		
+	font-size: 12px;
+
+
+}
+/* RENTAL.PHP *********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+#rental{
+	border-top: 1px dotted #c0c0c0;
+	border-bottom: 1px dotted #c0c0c0;
+	position: relative;
+	min-height: 30px;
+	padding:10px 0;
+}
+
+#no_of_pax{
+	font-size: 1.2em;
+}
+.rental-details{
+	margin:5px 0 5px 0;
+}
+
+.rental-details span{
+	font-size: .9em;
+	font-weight: normal;
+	font-style: normal;
+}
+/* RENTAL PRICES ******************************************************************
+************************************************************************************
+************************************************************************************
+************************************************************************************/
+#tbl_rental, #best, #first, #second, #third, #fourth, #fifth{
+	position: relative;
+}
+
+.capacity, .est{
+	color: #925000;
+	font-weight: bold;
+}
+
+#best, #first, #second, #third, #fourth, #fifth{
+	height: 80px;
+	padding:10px 0 0 0;
+	border-top: 1px dotted #d5d5d5;
+}
+
+#tour-only h3 {
+	position:relative;
+	top: 30px;	
+	color: #925000;
+	font-size: 1.8em;
+	text-transform: uppercase;
+	width: 200px;
+}
+
+.type {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+.rental-car-thumb{	
+	margin: 10px 0 10px 0;
+	float: left;
+	position: absolute;
+}
+.rental-info{	
+	left: 110px;
+	width: 80%;
+	top: 10;
+	position: absolute;
+	margin: 0;
+}
+
+.rental-info p{
+	margin: 0;
+	padding: 0;
+}
+p.rental-price{
+	font-size: 1.2em;
+	color: #00a500;
+	position: absolute;
+	top: 5;
+	right: 5%;
+	font-weight: bold;
+}
+
+.reserve-btn{	
+	position:absolute;
+	right: 1%;
+	top: 25;
+	font-size: .75em;
+}
+#moreOptions{
+	color:blue;
+	cursor: pointer;
+}
+/* TOUR.PHP *********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.duration{
+	color:#FF9900;
+}
+.left-link{
+	display:block;
+	padding:2px 0px 2px 0px;
+	color: #797979;
+	font: .9em "open sans";
+	border-bottom:1px dotted #797979;
+}
+
+.left-link:hover{
+	color: #FF9900;
+	background-color: rgba(255,212,120,0.1);
+}
+
+.left-nav ul{
+	margin-top:0px;
+}
+
+#davaobanner{
+	margin-left:5px;
+}
+#price{	
+	border: 1px #c0c0c0;
+	background-color: rgba(234,234,234,0.45);
+	position: relative;
+	width:100%;
+	margin-bottom: 10px;
+	background-color:#FF9900;
+	border-radius:3;
+}
+
+#form_price{
+	padding: 5px 5px 0 5px;
+}
+#form_price.pure-form{
+	margin: 0;
+}
+.form-header{	
+	font-weight: bold;
+	width:90%;
+	margin:0px;
+	font-size: 1.4em;
+	position:absolute;
+	color: #feffff;
+	top: 7;
+	left:65;
+}
+#priceSelectAdults{
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#form_price .submit{
+	display:block;
+	margin: 5px 0 0 0;
+	height: 35px;
+	width: 20%;
+	position:relative;
+	font-size: 1em;
+}
+
+#priceAvailable{
+	color:white;
+	margin-top: 10;
+	font-size:.72em
+}
+
+#form_price #error{
+	display:block;
+	font-size: .90em;
+	margin-left: 0px;
+	font-size:1em;
+}
+
+.price-result{
+	background-color: rgba(255,212,120,0.21);
+}
+
+.priceBelow{
+	position:relative;
+	padding:10px;
+	background-color: #ff9300;
+	margin: 5px 0 5px 0;
+	border: 1px solid rgba(213,213,213,0.5);
+	border-radius:5px;
+	color: #feffff;
+	font-size: 1.3em;
+}
+div.mnu-list{
+	position:relative;
+	min-height: 130px;
+	padding:10px;
+	background-color: white;
+	margin-top: 5px;
+	border: 1px solid rgba(213,213,213,0.5);
+	border-radius:5px;
+}
+div.mnu-list div img{
+	top: 15px;
+	width: 135px;
+	float: left;
+	border-radius:2px;
+}
+.list-details{
+	min-height: 130px;
+	width: 49%;
+	position: relative;
+	float: left;
+	margin: 0 10px;
+}
+.list-details h3{	
+	margin: 0;
+}
+
+div.col2{
+	display:table-cell;
+	vertical-align: middle;
+	float: right;
+	width: 22%;
+}
+.info{
+	width: 100%;
+}
+.col2 .price{
+	margin:0 auto;
+	text-align: center;
+	color: #ff2600;
+	font-size: 1.1em;
+}
+.questions:link {
+	margin: 0 auto;
+	display:block;
+	color: #521b92;
+	text-decoration: none;
+	font-size: .71em;
+	text-align: center;
+}
+
+a.lightbox-40507630053444 {
+	margin: 0 auto;
+	display:block;
+	color: #521b92;
+	text-decoration: none;
+	font-size: .75em;
+	text-align: center;
+}
+a.lightbox-40507630053444:visited {
+	color: #521b92;
+}
+.questions:visited {
+	color: #521b92;
+}
+.list-details .price span{
+	font-size: .5em;
+}
+#reservation-btn{
+	display:block;
+	width: 90px;
+	margin:0 auto;
+	font-size: .70em;
+}
+.white-popup {
+  position: relative;
+  background: #FFF;
+  padding: 20px;
+  width: auto;
+  max-width: 550px;
+  min-height:550px;
+  margin: 20px auto;
+  -mozkit-border-radius:3px 3px 3px 3px;
+  -webkit-border-radius:3px 3px 3px 3px;
+  border-radius:3px 3px 3px 3px;
+}
+
+#reservation h2{
+	width:100%;
+	color: #797979;
+	font: 1.5em "open sans";
+	text-align: center;
+	border-bottom:1px dotted #797979;	
+}
+
+.reserve-adults{
+	width:75%;
+	min-height:140px;
+}
+p.reserve-title{
+	font-weight: bold;
+	font-size: .9em;
+	color: #007cd5;
+}
+p.reserve-title, .reserve-accommodation, .reserve-nopersons{
+	margin: 0;
+}
+.adultprice{
+	color: #00a500;
+	font-weight: bold;
+	margin: 0;
+	font-size: 1.2em;
+}
+#form-thumbnail{
+	position:absolute;
+	width:120;
+	right: 20;	
+}
+
+.reservationForm{
+	padding-top:10px;
+	border-top:1px dotted #797979;
+}
+
+.reservationForm div label {
+	display: block;
+}
+.reservationForm button{
+	display:block;
+	position:relative;
+	margin:20px 0 0 0;
+}
+/***contact form ******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+
+div.form-all {
+	width: 500px;
+	padding: 20px;
+	background:white;
+	margin:auto
+}
+

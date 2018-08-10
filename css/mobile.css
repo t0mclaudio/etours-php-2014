@@ -1,0 +1,132 @@
+#index-container{
+	width:100%;
+	background: none;
+	height: 100px;
+}
+
+.logo{
+	width:200px;
+	height: 50px;
+	background: url(../images/davaotours-logo.svg) no-repeat;
+}
+
+header { 
+	font-size: .75em; 
+	height: 60px;
+}
+nav a {
+	padding: 5px 5px 5px 5px;
+	-mozkit-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+		
+}
+
+#mobi-menu{
+	display: block;
+	position: absolute;
+	top: 2%;
+	right: 3%;
+	width: 32px;
+	height: 32px;
+	background: url(../images/mobi/nav.png) no-repeat 1px 1px;
+}
+
+#mobi-search{
+	display: block;
+	position: absolute;
+	top: 2%;
+	right: 15%;
+	width: 32px;
+	height: 32px;
+	background: url(../images/mobi/nav.png) no-repeat -62px 1px;
+}
+
+.index-list-banners{ 
+	position:static; 
+}
+.index-banners{
+	position:static;
+	padding:10px;
+	float: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(254,255,255,0.95);
+}
+
+.index-banners section ul { 
+	position:static; 
+	clear: both; 
+	padding:0 0 0 0;
+}
+
+.index-banners section ul li {
+	border: 1px solid rgba(146,146,146,0.2);	
+	box-shadow:1px 2px 1px rgba(146,146,146,0.2);
+	padding:5px 20px 5px 5px;
+	width: 85%;
+	margin: 5px 0 5px 2px;
+	-moz-border-radius:4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: rgba(234,234,234,0.3) url(../images/mobi/link.png) no-repeat 99%50%;
+}
+.index-banners section ul li:hover {
+	background-color: rgba(234,234,234,0.6);
+}
+
+.index-banners section ul li h3 a{
+	color: #005392;
+	display:block;
+	width: 100%;
+	height: 100%;
+}
+.index-banners section { margin:5px 0 5px 0 }
+
+.index-list-bg { display:none; }
+.index-list-bg.one{ background: none }
+.index-list-bg.two{ background: none  }
+.index-list-bg.three{ background: none  }
+.index-list-bg.four{ background: none  }
+
+.index-banners section h1 {
+	text-align: right;
+	float: left;
+	padding:0;
+	margin: 0 .2em 0 0;
+	height: 100%;
+	font-size: .9em;
+	text-transform: Capitalize;
+}
+
+.index-banners section h2 {
+	text-align: left;
+	padding:0px;
+	height: 100%;
+	font-size: .9em;
+	text-transform: Capitalize;
+}
+.index-banners section a {
+	font-size: .8em;
+	min-height:20px;
+}
+
+nav{
+	width: 100%;
+	display: none;
+}
+
+#search-container{
+	display:none;
+	background-color: rgba(0,83,146,0.7);
+	width: 100%;
+	height: 20px;
+	padding: 5px 0 5px 0;
+}
+#search{ 
+	display:block;
+	margin: 0px auto;
+	font-size: 2em;
+}
+#testimonial{position: static;}
+
